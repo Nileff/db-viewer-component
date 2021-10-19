@@ -14,7 +14,7 @@
   position: relative;
 
   background-color: #ccc;
-  overflow: auto;
+  overflow: hidden;
 
   -moz-user-select: none !important;
   -o-user-select: none !important;
@@ -73,7 +73,7 @@
 }
 
 #veiwer-container .svg-container {
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
