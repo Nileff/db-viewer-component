@@ -44,10 +44,10 @@
         },
         {
           "name": "school_id",
-          "fk": {
+          "fk": [{
             "table": "school",
             "column": "id"
-          },
+          }],
           "nn": true,
           "uq": false
         }
@@ -79,18 +79,18 @@
         },
         {
           "name": "class_id",
-          "fk": {
+          "fk": [{
             "table": "class",
             "column": "id"
-          },
+          }],
           "nn": true
         },
         {
           "name": "friend",
-          "fk": {
+          "fk": [{
             "table": "student",
             "column": "id"
-          }
+          }]
         }
       ]
     }

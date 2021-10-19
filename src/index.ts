@@ -8,6 +8,7 @@ import Viewer from "./viewer";
 import { cloneDeep } from "lodash";
 
 import {
+  RenderedEvent,
   LoadEvent,
   ReadyEvent,
   ViewportClickEvent,
@@ -69,6 +70,7 @@ class DbViewer extends HTMLElement {
         schemaObj.viewWidth,
         schemaObj.viewHeight
       );
+      this.dispatchEvent(new RenderedEvent(this.tables));
     });
   }
 
@@ -183,6 +185,7 @@ class DbViewer extends HTMLElement {
           this.notParsedSchema.viewHeight
         );
         this.dispatchEvent(new LoadEvent());
+        this.dispatchEvent(new RenderedEvent(this.tables));
         break;
       }
       case "disable-table-movement":

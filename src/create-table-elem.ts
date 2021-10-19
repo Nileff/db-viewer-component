@@ -50,11 +50,7 @@ function addFkStatus(columnStatusTd: HTMLTableDataCellElement) {
 
 function addColumnTypeTd(column: Column, columnTr: HTMLTableRowElement) {
   const columnTypeTd = document.createElementNS(constant.nsHtml, "td");
-  if (isColumnFk(column)) {
-    columnTypeTd.innerHTML = column.fk!.column.type;
-  } else {
-    columnTypeTd.innerHTML = column.type;
-  }
+  columnTypeTd.innerHTML = column!.type;
   columnTr.appendChild(columnTypeTd);
 }
 

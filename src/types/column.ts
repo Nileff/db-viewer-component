@@ -14,8 +14,8 @@ export interface ColumnNoneFk {
   type: string;
 }
 
-export interface ColumnFk extends Omit<ColumnNoneFk, "type"> {
-  fk?: Fk;
+export interface ColumnFk extends ColumnNoneFk {
+  fk?: Fk[];
 }
 
 export type Column = ColumnFk | ColumnNoneFk;

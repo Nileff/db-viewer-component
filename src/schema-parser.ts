@@ -1,6 +1,7 @@
 import Table from "./table";
-import { ColumnFk } from "./types/column";
+import { ColumnFk, Fk } from "./types/column";
 import {
+  FkSchema,
   ColumnFkSchema,
   TableSchema,
   Schema,
@@ -26,21 +27,23 @@ export default function schemaParser(schema: Schema): Table[] {
   schema.tables.forEach((sTable) => {
     const fks = tablesFk.get(sTable)!;
     fks.forEach((sFkColumn: ColumnFkSchema) => {
-      const fkTable = tables.find(
-        (table) => table.getName() === sFkColumn.fk!.table
-      )!;
-      const fkColumn = fkTable
-        .getColumns()
-        .find((column) => column.name === sFkColumn.fk!.column);
-      if (fkColumn == null) throw new Error("fk column not found");
+      const fk: Fk[] = [];
+      sFkColumn.fk!.forEach((fks: FkSchema) => {
+        const fkTable = tables.find((table) => table.getName() === fks.table)!;
+        const fkColumn = fkTable
+          .getColumns()
+          .find((column) => column.name === fks.column);
+        if (fkColumn == null) throw new Error("fk column not found");
+        fk.push({
+          column: fkColumn,
+          table: fkTable,
+        });
+      });
       tables
         .find((table) => sTable.name === table.getName())!
         .addColumn({
           ...sFkColumn,
-          fk: {
-            column: fkColumn,
-            table: fkTable,
-          },
+          fk,
         } as ColumnFk);
     });
   });

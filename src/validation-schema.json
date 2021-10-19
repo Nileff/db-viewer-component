@@ -115,17 +115,20 @@
                   "description": "uq stands for unique"
                 },
                 "fk": {
-                  "type": "object",
-                  "required": [
-                    "table",
-                    "column"
-                  ],
-                  "properties": {
-                    "table": {
-                      "type": "string"
-                    },
-                    "column": {
-                      "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "table",
+                      "column"
+                    ],
+                    "properties": {
+                      "table": {
+                        "type": "string"
+                      },
+                      "column": {
+                        "type": "string"
+                      }
                     }
                   }
                 },

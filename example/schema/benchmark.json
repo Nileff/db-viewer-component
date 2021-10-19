@@ -52,10 +52,12 @@
         },
         {
           "name": "col4",
-          "fk": {
-            "table": "table1",
-            "column": "id"
-          }
+          "fk": [
+            {
+              "table": "table1",
+              "column": "id"
+            }
+          ]
         }
       ]
     },
@@ -85,17 +87,21 @@
         },
         {
           "name": "col4",
-          "fk": {
-            "table": "table1",
-            "column": "id"
-          }
+          "fk": [
+            {
+              "table": "table1",
+              "column": "id"
+            }
+          ]
         },
         {
           "name": "col5",
-          "fk": {
-            "table": "table2",
-            "column": "id"
-          }
+          "fk": [
+            {
+              "table": "table2",
+              "column": "id"
+            }
+          ]
         }
       ]
     },
@@ -125,17 +131,19 @@
         },
         {
           "name": "col4",
-          "fk": {
-            "table": "table1",
-            "column": "id"
-          }
+          "fk": [
+            {
+              "table": "table1",
+              "column": "id"
+            }
+          ]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -165,17 +173,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -205,17 +213,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -245,17 +253,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -285,17 +293,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -325,17 +333,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -365,17 +373,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -405,17 +413,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -445,17 +453,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -485,17 +493,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -525,17 +533,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -565,17 +573,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -605,17 +613,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -645,17 +653,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -685,17 +693,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -725,17 +733,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -765,17 +773,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -805,17 +813,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -845,17 +853,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -885,17 +893,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -925,17 +933,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -965,17 +973,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -1005,17 +1013,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -1045,17 +1053,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -1085,17 +1093,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -1125,17 +1133,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     },
@@ -1165,17 +1173,17 @@
         },
         {
           "name": "col4",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         },
         {
           "name": "col5",
-          "fk": {
+          "fk": [{
             "table": "table2",
             "column": "id"
-          }
+          }]
         }
       ]
     }

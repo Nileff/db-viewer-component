@@ -3,7 +3,7 @@ import Minimap from "./minimap";
 import Relation, { RelationData } from "./realtion/relation";
 import spiralArrange from "./spiral-arrange";
 import Table from "./table";
-import { isColumnFk } from "./types/column";
+import { isColumnFk, Fk } from "./types/column";
 import Callbacks from "./types/callbacks";
 import TableData from "./types/table-data";
 import ViewBoxVals from "./types/view-box-vals";
@@ -176,18 +176,21 @@ export default class Viewer {
 
       table.getColumns().forEach((column) => {
         if (isColumnFk(column)) {
-          const relationInfo = {
-            fromColumn: column.fk!.column,
-            fromTable: column.fk!.table,
-            toColumn: column,
-            toTable: table,
-          };
-          const relation = new Relation(relationInfo, {
-            relationClick: this.relationClick,
-            relationContextMenu: this.relationContextMenu,
-            relationDblClick: this.relationDblClick,
-          });
-          this.relations.addRelation(relation);
+          const fks: Fk[] = column.fk || []
+          fks.forEach((fk: Fk) => {
+            const relationInfo = {
+              fromColumn: fk.column,
+              fromTable: fk.table,
+              toColumn: column,
+              toTable: table,
+            };
+            const relation = new Relation(relationInfo, {
+              relationClick: this.relationClick,
+              relationContextMenu: this.relationContextMenu,
+              relationDblClick: this.relationDblClick,
+            });
+            this.relations.addRelation(relation);
+          })
         }
       });
 

@@ -15,7 +15,7 @@ export interface ColumnNoneFkSchema {
 
 export declare interface ColumnFkSchema
   extends Omit<ColumnNoneFkSchema, "type"> {
-  fk?: FkSchema;
+  fk?: FkSchema[];
 }
 
 export type ColumnSchema = ColumnFkSchema | ColumnNoneFkSchema;

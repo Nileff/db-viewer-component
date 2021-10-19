@@ -37,10 +37,10 @@
         },
         {
           "name": "col2",
-          "fk": {
+          "fk": [{
             "table": "table1",
             "column": "id"
-          }
+          }]
         }
       ]
     }

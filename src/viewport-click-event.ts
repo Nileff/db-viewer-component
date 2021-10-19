@@ -63,7 +63,19 @@ export class ReadyEvent extends CustomEvent<void> {
     super("ready");
   }
 }
+
+export class RenderedEvent extends CustomEvent<any> {
+  constructor(tables: any) {
+    super("rendered", {
+      detail: {
+        tables,
+      },
+    });
+  }
+}
+
 interface DbViewerEventMap extends HTMLElementEventMap {
+  rendered: RenderedEvent;
   ready: ReadyEvent;
   load: LoadEvent;
   viewportClick: ViewportClickEvent;

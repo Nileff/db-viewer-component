@@ -31,7 +31,8 @@
     "e2e-firefox": "npx playwright test --browser=firefox",
     "e2e-webkit": "npx playwright test --browser=webkit",
     "start-and-e2e": "start-server-and-test \"yarn start\" http://localhost:9998 \"yarn run e2e\"",
-    "lint": "npx eslint . --ext .ts"
+    "lint": "npx eslint . --ext .ts",
+    "prepare": "npm run build-prod"
   },
   "main": "dist/main.js",
   "types": "dist/src/index.d.ts",
