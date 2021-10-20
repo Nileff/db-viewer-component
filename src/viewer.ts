@@ -257,11 +257,11 @@ export default class Viewer {
   }
 
   zoomIn = (): void => {
-    this.setZoom(this.zoom * constant.ZOOM);
+    this.setZoom(this.zoom + constant.ZOOM);
   };
 
   zoomOut = (): void => {
-    this.setZoom(this.zoom / constant.ZOOM);
+    this.setZoom(this.zoom - constant.ZOOM);
   };
 
   getZoom(): number {

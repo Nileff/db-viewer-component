@@ -11,6 +11,7 @@ export interface ColumnNoneFk {
   pk?: boolean;
   uq?: boolean;
   nn?: boolean;
+  required?: boolean;
   type: string;
 }
 

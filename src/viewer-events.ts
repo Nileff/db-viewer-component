@@ -221,10 +221,17 @@ class ViewerEvents {
   };
 
   private onClick = (event: MouseEvent) => {
-    const zoom = this.getZoom();
-    const x = event.offsetX / zoom;
-    const y = event.offsetY / zoom;
-    this.viewportClick(x, y);
+    if (
+      !event.composedPath().find((item: EventTarget) => {
+        const target = item as HTMLElement;
+        return (target.tagName || "").toLowerCase() === "table";
+      })
+    ) {
+      const zoom = this.getZoom();
+      const x = event.offsetX / zoom;
+      const y = event.offsetY / zoom;
+      this.viewportClick(x, y);
+    }
   };
 
   private windowResizeEvent(): void {

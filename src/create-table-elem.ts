@@ -67,9 +67,17 @@ function addStatusTd(column: Column, columnTr: HTMLTableRowElement) {
   columnTr.appendChild(columnStatusTd);
 }
 
-function addNameTd(name: string, columnTr: HTMLTableRowElement) {
+function addNameTd(
+  name: string,
+  columnTr: HTMLTableRowElement,
+  bold?: boolean
+) {
   const columnNameTd = document.createElementNS(constant.nsHtml, "td");
-  columnNameTd.innerHTML = name;
+  if (bold) {
+    columnNameTd.innerHTML = "<b>" + name + "</b>";
+  } else {
+    columnNameTd.innerHTML = name;
+  }
   columnTr.appendChild(columnNameTd);
 }
 
@@ -78,7 +86,7 @@ function createColumns(tbody: Element, columns: Column[]): void {
     const columnTr = createTr(column);
 
     addStatusTd(column, columnTr);
-    addNameTd(column.name, columnTr);
+    addNameTd(column.name, columnTr, column.required);
     addColumnTypeTd(column, columnTr);
 
     tbody.appendChild(columnTr);
